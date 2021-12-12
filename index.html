@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>RockPaperScissorsLizardSpock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="container">
+    <div id="header-container">
+        <div id="title-col">
+            <p>rock</p>
+            <p>paper</p>
+            <p>scissors</p>
+            <p>lizard</p>
+            <p>spock</p>
+        </div>
+        <div id="score-board">
+            <p>SCORE</p>
+            <p id="score" data-score="0">0</p>
+        </div>
+        <button id="reset-score" onclick="resetScore()">reset</button>
+    </div>
+    
+
+    <div id="game-options">
+        <button id="btn-rock" class="btn-option">
+            <div class="opt-symbol">🗿</div>
+            <div class="opt-text">rock</div>
+        </button>
+        <button id="btn-paper" class="btn-option">
+            <div class="opt-symbol">📃</div>
+            <div class="opt-text">paper</div>
+        </button>
+        <button id="btn-scissors" class="btn-option">
+            <div class="opt-symbol">✂️</div>
+            <div class="opt-text">scissors</div>
+        </button>
+        <button id="btn-lizard" class="btn-option">
+            <div class="opt-symbol">🦎</div>
+            <div class="opt-text">lizard</div>
+        </button>
+        <button id="btn-spock" class="btn-option">
+            <div class="opt-symbol">🖖</div>
+            <div class="opt-text">spock</div>
+        </button>
+        <button id="btn-random" class="btn-option">
+            <div class="opt-symbol random-symbol">
+                <p>🗿📃</p>
+                <p>✂️🦎🖖</p>
+            </div>
+            <div class="opt-text">random</div>
+        </button>
+    </div>
+
+    <div id="opponents-pick"></div>
+    <div id="result-container">
+        <div id="result-msg"></div>
+        <div class="results">
+            <div>
+                <div id="player-choice" class="choice"></div>
+                <p class="name">YOU</p>
+            </div>
+            <p id="vs-text">V.S.</p>
+            <div>
+                <div id="opponent-choice" class="choice"></div>
+                <p class="name">OPPONENT</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
